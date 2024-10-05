@@ -1,6 +1,3 @@
-// This is the source code for Planet Life's Intergalactic Ghost Exchange.
-// I used inspect element to copy the code and paste it here.
-
 function calculateGhostPrice() {
 	ghostTradeTick = 0;
 	var chance = (Math.random() * state.ghostTrend) + (state.ghostTrend / 2);
@@ -44,24 +41,4 @@ function calculateGhostPrice() {
 	}
 */
 
-}
-
-
-// The scripts below are just used to simulate how the game would use the function.
-// It starts by setting variables like "ghostPrice" to what they would be in the game, 
-// then it calls the "calculateGhostPrice" function repeatedly and prints the results.
-
-function updateState(key, value) {
-    state[key] = value;
-}
-
-let state = {
-    ghostPrice: 10,
-    ghostTrend: 5,
-    ghostTrendy: true
-}
-
-while (1 == 1) {
-calculateGhostPrice();
-print(state.ghostPrice);
 }
